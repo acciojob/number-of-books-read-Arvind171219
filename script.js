@@ -16,8 +16,15 @@ const library = [
   },
 ];
 
-const numberOfBooksRead = () => {
-  // write your code here
+const numberOfBooksRead = (library) => {
+  // write your csdode here
+  let count = 0;
+  for (let i = 0; i < library.length; i++) {
+    if (library[i].readingStatus === true) {
+      count++;
+    }
+  }
+  return count;
 };
 
 // Do not change the code below
